@@ -1,0 +1,37 @@
+### Ignorar archivos comunes del sistema
+.DS_Store
+Thumbs.db
+
+### Ignorar configuracion de IntelliJ IDEA
+.idea/
+*.iml
+
+### Ignorar archivos generados por gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+out/
+logs/
+*.log
+
+### Ignorar configuracion local de VSCode
+.vscode/
+
+### Ignorar depedencias y buils de angular
+libro-app/node_modules/
+libro-app/dist/
+libro-app/.angular/
+libro-app/.vscode/
+
+### Ignorar archivos temporales y de entorno
+
+*.env
+*.local
+*.bak
+*.swp
+*.tmp
+
+###Otros IDEs o herramientas (si usas)
+*.classpath
+*.Project
+*.setting/
