@@ -9,9 +9,9 @@ public class Categoria {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_categoria")
-    private int idCategoria;
+    private int idcategoria;
     @Column(name = "categoria")
-    private String categorias;
+    private String categoria;
     @Column(name = "descripcion")
     private String descripcion;
 
@@ -19,25 +19,25 @@ public class Categoria {
     }
 
     public Categoria(int idCategoria, String categorias, String descripcion) {
-        this.idCategoria = idCategoria;
-        this.categorias = categorias;
+        this.idcategoria = idCategoria;
+        this.categoria = categorias;
         this.descripcion = descripcion;
     }
 
     public int getIdCategoria() {
-        return idCategoria;
+        return idcategoria;
     }
 
     public void setIdCategoria(int idCategoria) {
-        this.idCategoria = idCategoria;
+        this.idcategoria = idCategoria;
     }
 
     public String getCategorias() {
-        return categorias;
+        return categoria;
     }
 
     public void setCategorias(String categorias) {
-        this.categorias = categorias;
+        this.categoria = categorias;
     }
 
     public String getDescripcion() {
@@ -51,8 +51,8 @@ public class Categoria {
     @Override
     public String toString() {
         return "Categoria{" +
-                "idCategoria=" + idCategoria +
-                ", categorias='" + categorias + '\'' +
+                "idcategoria=" + idcategoria +
+                ", categoria='" + categoria + '\'' +
                 ", descripcion='" + descripcion + '\'' +
                 '}';
     }
