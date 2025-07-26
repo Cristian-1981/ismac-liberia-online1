@@ -45,7 +45,7 @@ public class CategoriaRepositoryTestIntegracion {
         Categoria categoria = new Categoria(0,"Aventura","Busqueda de tesoros");
         Categoria categoriaguardado = categoriaRepository.save(categoria);
         assertNotNull(categoriaguardado);
-        assertEquals("Aventura",categoriaguardado.getCategorias());
+        assertEquals("Aventura",categoriaguardado.getCategoria());
         assertEquals("Busqueda de tesoros",categoriaguardado.getDescripcion());
     }
 
@@ -53,12 +53,12 @@ public class CategoriaRepositoryTestIntegracion {
     public void update(){
         Optional<Categoria> categoria = categoriaRepository.findById(58);
         assertTrue(categoria.isPresent(),"La categoria con id = 58 deberia existir");
-        categoria.orElse(null).setCategorias("Infantil");
+        categoria.orElse(null).setCategoria("Infantil");
         categoria.orElse(null).setDescripcion("Aprendizaje");
 
         Categoria categoriaActualizado = categoriaRepository.save(categoria.orElse(null));
         assertNotNull(categoriaActualizado);
-        assertEquals("Infantil", categoriaActualizado.getCategorias());
+        assertEquals("Infantil", categoriaActualizado.getCategoria());
         assertEquals("Aprendizaje", categoriaActualizado.getDescripcion());
     }
 

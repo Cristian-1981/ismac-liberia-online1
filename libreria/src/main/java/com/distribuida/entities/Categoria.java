@@ -2,15 +2,15 @@ package com.distribuida.entities;
 
 public class Categoria {
     private int idCategoria;
-    private String categorias;
+    private String categoria;
     private String descripcion;
 
     public Categoria() {
     }
 
-    public Categoria(int idCategoria, String categorias, String descripcion) {
+    public Categoria(int idCategoria, String categoria, String descripcion) {
         this.idCategoria = idCategoria;
-        this.categorias = categorias;
+        this.categoria = categoria;
         this.descripcion = descripcion;
     }
 
@@ -23,11 +23,11 @@ public class Categoria {
     }
 
     public String getCategorias() {
-        return categorias;
+        return categoria;
     }
 
     public void setCategorias(String categorias) {
-        this.categorias = categorias;
+        this.categoria = categorias;
     }
 
     public String getDescripcion() {
@@ -42,7 +42,7 @@ public class Categoria {
     public String toString() {
         return "Categoria{" +
                 "idCategoria=" + idCategoria +
-                ", categorias='" + categorias + '\'' +
+                ", categoria='" + categoria + '\'' +
                 ", descripcion='" + descripcion + '\'' +
                 '}';
     }

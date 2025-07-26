@@ -29,8 +29,8 @@ public class CategoriaControllerTestUnitaria {
         MockitoAnnotations.openMocks(this);
 
         categoria = new Categoria();
-        categoria.setIdCategoria(1);
-        categoria.setCategorias("Aventura");
+        categoria.setIdcategoria(1);
+        categoria.setCategoria("Aventura");
         categoria.setDescripcion("Busqueda de tesoros");
     }
 
@@ -47,7 +47,7 @@ public class CategoriaControllerTestUnitaria {
         when(categoriaService.findOne(1)).thenReturn(categoria);
         ResponseEntity<Categoria> respuesta = categoriaController.findOne(1);
         assertEquals(200, respuesta.getStatusCodeValue());
-        assertEquals(categoria.getCategorias(), respuesta.getBody().getCategorias());
+        assertEquals(categoria.getCategoria(), respuesta.getBody().getCategoria());
     }
 
     @Test
@@ -62,7 +62,7 @@ public class CategoriaControllerTestUnitaria {
         when(categoriaService.save(any(Categoria.class))).thenReturn(categoria);
         ResponseEntity<Categoria> respuesta = categoriaController.save(categoria);
         assertEquals(200, respuesta.getStatusCodeValue());
-        assertEquals("Aventura", respuesta.getBody().getCategorias());
+        assertEquals("Aventura", respuesta.getBody().getCategoria());
     }
 
 

@@ -13,7 +13,6 @@ public class CategoriaServiceImpl implements CategoriaService {
 
     @Autowired
     private CategoriaRepository categoriaRepository;
-
     @Override
     public List<Categoria> findAll() {
         return categoriaRepository.findAll();
@@ -33,15 +32,13 @@ public class CategoriaServiceImpl implements CategoriaService {
     @Override
     public Categoria update(int id, Categoria categoria) {
         Categoria categoriaExistente = findOne(id);
-
         if(categoriaExistente == null){
             return null;
         }
-        categoriaExistente.setCategorias(categoria.getCategorias());
+        categoriaExistente.setCategoria(categoria.getCategoria());
         categoriaExistente.setDescripcion(categoria.getDescripcion());
 
         return categoriaRepository.save(categoriaExistente);
-
     }
 
     @Override

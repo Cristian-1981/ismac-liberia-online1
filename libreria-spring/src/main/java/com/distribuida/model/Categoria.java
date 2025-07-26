@@ -14,30 +14,29 @@ public class Categoria {
     private String categoria;
     @Column(name = "descripcion")
     private String descripcion;
-
     public Categoria() {
     }
 
-    public Categoria(int idCategoria, String categorias, String descripcion) {
-        this.idcategoria = idCategoria;
-        this.categoria = categorias;
+    public Categoria(int idcategoria, String categoria, String descripcion) {
+        this.idcategoria = idcategoria;
+        this.categoria = categoria;
         this.descripcion = descripcion;
     }
 
-    public int getIdCategoria() {
+    public int getIdcategoria() {
         return idcategoria;
     }
 
-    public void setIdCategoria(int idCategoria) {
-        this.idcategoria = idCategoria;
+    public void setIdcategoria(int idcategoria) {
+        this.idcategoria = idcategoria;
     }
 
-    public String getCategorias() {
+    public String getCategoria() {
         return categoria;
     }
 
-    public void setCategorias(String categorias) {
-        this.categoria = categorias;
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
     }
 
     public String getDescripcion() {
@@ -54,6 +53,7 @@ public class Categoria {
                 "idcategoria=" + idcategoria +
                 ", categoria='" + categoria + '\'' +
                 ", descripcion='" + descripcion + '\'' +
+
                 '}';
     }
 
