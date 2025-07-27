@@ -15,11 +15,16 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CategoriaComponent } from './components/categoria/categoria';
+import { AutorComponent } from './components/autor/autor';
 
 @NgModule({
   declarations: [
     App,
-    ClienteComponent
+    ClienteComponent,
+    CategoriaComponent,
+    AutorComponent,
+
   ],
   imports: [
     BrowserModule,
