@@ -75,7 +75,7 @@ mostrarColumnas: String[] = ['idCliente', 'cedula', 'nombre', 'apellido', 'direc
       cancelButtonColor: '#3085d6'
     }).then((result) => {
       if (result.isConfirmed) {
-        this.clienteService.delete(this.cliente.idcliente).subscribe(() => {
+        this.clienteService.delete(this.cliente.idCliente).subscribe(() => {
           this.findAll();
           this.cliente = {} as Cliente;
           Swal.fire('Eliminado', 'El cliente ha sido eliminado.', 'success');
@@ -90,7 +90,7 @@ mostrarColumnas: String[] = ['idCliente', 'cedula', 'nombre', 'apellido', 'direc
 
   editarCliente(cliente: Cliente): void {
     this.cliente = { ...cliente };
-    this.idEditar = cliente.idcliente;
+    this.idEditar = cliente.idCliente;
     this.editar = true;
 
     setTimeout(() => {

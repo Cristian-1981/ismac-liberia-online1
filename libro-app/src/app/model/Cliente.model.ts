@@ -1,5 +1,5 @@
 export interface Cliente{
-    idcliente: number
+    idCliente: number
     cedula: string
     nombre: string
     apellido: string
