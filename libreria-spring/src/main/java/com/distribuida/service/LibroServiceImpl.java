@@ -39,7 +39,7 @@ public class LibroServiceImpl implements LibroService{
         }
 
         libroExistente.setTitulo(libro.getTitulo());
-        libroExistente.setEditotial(libro.getEditotial());
+        libroExistente.setEditorial(libro.getEditorial());
         libroExistente.setNumpaginas(libro.getNumpaginas());
         libroExistente.setEdicion(libro.getEdicion());
         libroExistente.setIdioma(libro.getIdioma());

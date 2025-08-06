@@ -16,7 +16,7 @@ public class Libro {
     @Column(name = "titulo")
     private String titulo;
     @Column(name = "editorial")
-    private String editotial;
+    private String editorial;
     @Column(name = "num_paginas")
     private int numpaginas;
     @Column(name = "edicion")
@@ -51,10 +51,10 @@ public class Libro {
     public Libro() {
     }
 
-    public Libro(int idLibro, String titulo, String editotial, int numpaginas, String edicion, String idioma, Date fechapublicacion, String descripcion, String tipopasta, String isbn, int numejemplares, String portada, String presentacion, Double precio, Categoria categoria, Autor autor) {
+    public Libro(int idLibro, String titulo, String editorial, int numpaginas, String edicion, String idioma, Date fechapublicacion, String descripcion, String tipopasta, String isbn, int numejemplares, String portada, String presentacion, Double precio, Categoria categoria, Autor autor) {
         this.idLibro = idLibro;
         this.titulo = titulo;
-        this.editotial = editotial;
+        this.editorial = editorial;
         this.numpaginas = numpaginas;
         this.edicion = edicion;
         this.idioma = idioma;
@@ -86,12 +86,12 @@ public class Libro {
         this.titulo = titulo;
     }
 
-    public String getEditotial() {
-        return editotial;
+    public String getEditorial() {
+        return editorial;
     }
 
-    public void setEditotial(String editotial) {
-        this.editotial = editotial;
+    public void setEditorial(String editorial) {
+        this.editorial = editorial;
     }
 
     public int getNumpaginas() {
@@ -203,7 +203,7 @@ public class Libro {
         return "Libro{" +
                 "idLibro=" + idLibro +
                 ", titulo='" + titulo + '\'' +
-                ", editotial='" + editotial + '\'' +
+                ", editorial='" + editorial + '\'' +
                 ", numpaginas=" + numpaginas +
                 ", edicion='" + edicion + '\'' +
                 ", idioma='" + idioma + '\'' +
