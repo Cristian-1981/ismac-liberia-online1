@@ -57,7 +57,7 @@ public class LibroRepositoryTestIntegracion {
         Libro libro = new Libro();
         libro.setIdLibro(0);
         libro.setTitulo("Los williams");
-        libro.setEditotial("Mallorca");
+        libro.setEditorial("Mallorca");
         libro.setNumpaginas(204);
         libro.setEdicion("Segunda");
         libro.setIdioma("Español");
@@ -86,7 +86,7 @@ public class LibroRepositoryTestIntegracion {
         assertNotNull(libroExistente);
         assertNotNull(categoriaExistente);
 
-        libroExistente.orElse(null).setEditotial("Madrid");
+        libroExistente.orElse(null).setEditorial("Madrid");
         libroExistente.orElse(null).setNumpaginas(150);
         libroExistente.orElse(null).setIdioma("Ingles");
         libroExistente.orElse(null).setCategoria(categoriaExistente.orElse(null));
@@ -94,7 +94,7 @@ public class LibroRepositoryTestIntegracion {
         Libro libroActualizado = libroRepository.save(libroExistente.orElse(null));
 
         assertNotNull(libroActualizado);
-        assertEquals("Madrid", libroActualizado.getEditotial());
+        assertEquals("Madrid", libroActualizado.getEditorial());
     }
 
     @Test
