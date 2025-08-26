@@ -12,7 +12,6 @@ import java.math.RoundingMode;
         uniqueConstraints = @UniqueConstraint(columnNames = {"id_carrito","id_libro"}))
 public class CarritoItem {
 
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_carrito_item")
