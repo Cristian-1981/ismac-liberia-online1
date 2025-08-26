@@ -19,7 +19,7 @@
       <module name="proyecto-libreria.libreria-spring.test" options="-parameters" />
       <module name="proyecto-libreria1.libreria-spring" options="-parameters" />
       <module name="proyecto-libreria1.libreria-spring.main" options="-parameters" />
-      <module name="proyecto-libreria1.libreria-spring.test" options="-parameters" />
+      <module name="proyecto-libreria1.libreria-spring.test" options="-parameters --add-exports java.base/jdk.internal.org.objectweb.asm.util=ALL-UNNAMED --add-exports jdk.jfr/jdk.jfr.internal.jfc.model=ALL-UNNAMED" />
     </option>
   </component>
 </project>
