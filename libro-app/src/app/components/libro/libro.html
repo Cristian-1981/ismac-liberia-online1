@@ -1,3 +1,35 @@
+<mat-toolbar color = "primary" class="topbar">
+    <a mat-button class="brand" routerLink="/libros1">
+        <mat-icon class="brand-logo" fontSet="material-icons-outlined" fontIcon="menu_book">
+        </mat-icon>
+        <span class="brand-name">Libreria ETERNAL S.A.</span>
+
+    </a>
+
+        <a mat-button routerlink="/autores" routerLinkActive="active">
+        <mat-icon fontSet="material-icons-outlined">person</mat-icon>
+        <span>Autores</span>
+    </a>
+
+    <a mat-button routerlink="/clientes" routerLinkActive="active">
+        <mat-icon fontSet="material-icons-outlined">groups</mat-icon>
+        <span>Clientes</span>
+    </a>
+
+    <a mat-button routerlink="/libros" routerLinkActive="active">
+        <mat-icon fontSet="material-icons-outlined">library_books</mat-icon>
+        <span>Libros</span>
+    </a>
+
+    <span class="spacer"></span>
+
+    <a mat-stroked-button color="accent" routerLink="/carrito">
+        <mat-icon fontSet="material-icons-outlined">shopping-cart</mat-icon>
+        <span>Carrito</span>
+    </a>
+
+</mat-toolbar>
+
 <div class="container mt-4">
   <h1>Libros</h1>
 
@@ -203,7 +235,7 @@
 
                     <div class="imagen-container" *ngIf="libro.portada || imagenPreview">
                         <img
-                        [src]="'http://localhost:8080' + (imagenPreview || libro.portada)"
+                        [src]="'http://localhost:8080/' + (imagenPreview || libro.portada)"
                         alt="Portada del libro"
                         class="imagen-portada"
                         >
