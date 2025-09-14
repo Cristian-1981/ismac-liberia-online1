@@ -1,5 +1,6 @@
 package com.distribuida.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
@@ -17,9 +18,12 @@ public class CarritoItem {
     @Column(name = "id_carrito_item")
     private Long idCarritoItem;
 
-    @JsonIgnoreProperties
-    @ManyToOne(optional = false)
-    @JoinColumn(name = "id_carrito")
+    //@JsonIgnoreProperties
+    //@ManyToOne(optional = false)
+    //@JoinColumn(name = "id_carrito")
+    @JsonBackReference
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "id_carrito", nullable = false)
     private Carrito carrito;
 
     @JsonIgnoreProperties({"autor","categoria"})
