@@ -1,13 +1,13 @@
 <mat-toolbar color="primary">
-    <button mat-button routerlink="/libros1"><mat-icon>arrow_back</mat-icon>Seguir Comprando</button>
+    <button mat-button routerLink="/libros1"><mat-icon>arrow_back</mat-icon>Seguir Comprando</button>
     <span class="spacer"></span>
     <span>Carrito</span>
     <button mat-button [matMenuTriggerFor]="mas">Más</button>
     <mat-menu #mas="matMenu">
-        <button mat-menu-item routerlink="/categorias">Categorias</button>
-        <button mat-menu-item routerlink="/autores">Autores</button>
-        <button mat-menu-item routerlink="/clientes">Clientes</button>
-        <button mat-menu-item routerlink="/libros">Libros</button>
+        <button mat-menu-item routerLink="/categorias">Categorias</button>
+        <button mat-menu-item routerLink="/autores">Autores</button>
+        <button mat-menu-item routerLink="/clientes">Clientes</button>
+        <button mat-menu-item routerLink="/libros">Libros</button>
     </mat-menu>
 </mat-toolbar>
 

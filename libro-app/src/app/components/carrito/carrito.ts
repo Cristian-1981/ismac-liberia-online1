@@ -25,7 +25,7 @@ export class CarritoComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    this.reload();
   }
 
   reload() {

@@ -1,22 +1,26 @@
-<mat-toolbar color = "primary" class="topbar">
+<mat-toolbar color="primary" class="topbar">
     <a mat-button class="brand" routerLink="/libros1">
         <mat-icon class="brand-logo" fontSet="material-icons-outlined" fontIcon="menu_book">
         </mat-icon>
         <span class="brand-name">Libreria ETERNAL S.A.</span>
-
     </a>
 
-        <a mat-button routerlink="/autores" routerLinkActive="active">
+    <a mat-button routerLink="/categorias" routerLinkActive="active">
+        <mat-icon fontSet="material-icons-outlined">category</mat-icon>
+        <span>Categorías</span>
+    </a>
+
+    <a mat-button routerLink="/autores" routerLinkActive="active">
         <mat-icon fontSet="material-icons-outlined">person</mat-icon>
         <span>Autores</span>
     </a>
 
-    <a mat-button routerlink="/clientes" routerLinkActive="active">
+    <a mat-button routerLink="/clientes" routerLinkActive="active">
         <mat-icon fontSet="material-icons-outlined">groups</mat-icon>
         <span>Clientes</span>
     </a>
 
-    <a mat-button routerlink="/libros" routerLinkActive="active">
+    <a mat-button routerLink="/libros" routerLinkActive="active">
         <mat-icon fontSet="material-icons-outlined">library_books</mat-icon>
         <span>Libros</span>
     </a>
@@ -27,7 +31,6 @@
         <mat-icon fontSet="material-icons-outlined">shopping-cart</mat-icon>
         <span>Carrito</span>
     </a>
-
 </mat-toolbar>
 
 <div class="container mt-4">
